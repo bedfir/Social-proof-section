@@ -4,6 +4,9 @@
 
 body {
   font-size: 15px;
+  background-color: white;
+  background: url(../../images/bg-pattern-top-desktop.svg) left top no-repeat,
+    url(../../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
   font-family: $family;
   font-weight: $weight-regular;
   background-color: $white;
