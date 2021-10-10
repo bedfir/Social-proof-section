@@ -81,6 +81,8 @@ th {
 /*--------------- General Content Styles ------------------*/
 body {
   font-size: 15px;
+  background-color: white;
+  background: url(../../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
   font-family: "Spartan", sans-serif;
   font-weight: 400;
   background-color: white;
