@@ -1,0 +1,10 @@
+@import "libs/reset.scss";
+
+/*--------------- General Content Styles ------------------*/
+
+body {
+  font-size: 15px;
+  font-family: $family;
+  font-weight: $weight-regular;
+  background-color: $white;
+}

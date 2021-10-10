@@ -1,0 +1,26 @@
+@import url("https://fonts.google.com/specimen/Spartan");
+
+/*--------------- Variable ----------------------*/
+
+// ---Color
+
+// Primary
+$Very-Dark-Magenta: hsl(300, 43%, 22%);
+$Soft-Pink: hsl(333, 80%, 67%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$Light-Grayish-Magenta: hsl(300, 24%, 96%);
+$Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+
+// ---Typography
+
+// Font
+$family: "Spartan", sans-serif;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-bold: 700;
+
+@import "general";
+@import "home";
+@import "media_768";

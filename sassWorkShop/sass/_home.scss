@@ -1,0 +1,125 @@
+.container {
+  width: 80%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+
+  .container__social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      "title stars"
+      "costumer  costumer";
+
+    header {
+      margin-top: 4.8rem;
+
+      .title-social {
+        grid-area: title;
+        font-weight: $weight-bold;
+        color: $Very-Dark-Magenta;
+        margin-top: 0.6rem;
+        padding: 2rem 0 0 1.4rem;
+        line-height: 3rem;
+        font-size: 3.2rem;
+        width: 70%;
+
+        span {
+          font-size: 3.5rem;
+        }
+      }
+      p {
+        color: $Dark-Grayish-Magenta;
+        width: 77%;
+        margin: 1.5rem;
+        padding: 0.4rem;
+        font-size: 1.078rem;
+        font-weight: $weight-regular;
+        line-height: 1.6rem;
+      }
+    }
+
+    .stars__social {
+      grid-area: stars;
+      position: relative;
+      display: flex;
+      gap: 5%;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: flex-start;
+      margin-top: 3rem;
+      padding: 2.4rem 0 0 1.4rem;
+
+      .wrapper__stars {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 79.5%;
+        height: 60px;
+        background-color: $Light-Grayish-Magenta;
+        border-radius: 0.5rem;
+
+        &:nth-child(2) {
+          transform: translateX(3rem);
+        }
+        &:nth-child(3) {
+          transform: translateX(6rem);
+        }
+      }
+      .company__name {
+        font-size: 0.9rem;
+        color: $Very-Dark-Magenta;
+        font-weight: $weight-bold;
+      }
+    }
+    .costumer__feedback {
+      grid-area: costumer;
+      display: flex;
+      width: 100%;
+      margin-top: 2rem;
+
+      .costumer__satisfaction {
+        background-color: $Very-Dark-Magenta;
+        margin: 2rem;
+        height: 14.688rem;
+        border-radius: 0.5rem;
+        display: flex;
+        column-gap: 2%;
+        flex-wrap: wrap;
+        justify-content: start;
+        &:nth-child(2) {
+          transform: translateY(2rem);
+        }
+        &:nth-child(3) {
+          transform: translateY(4rem);
+        }
+
+        img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          margin: 2.2rem 0 0 1.2rem;
+        }
+        .costumer__identity {
+          margin: 2.4rem 0 0 1rem;
+
+          .costumer__name {
+            color: $white;
+          }
+          .costumer__validation {
+            color: $Soft-Pink;
+          }
+        }
+        p {
+          text-align: start;
+          color: $white;
+          font-size: 1rem;
+          margin: 0rem 1.2rem;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}
